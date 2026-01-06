@@ -1,0 +1,86 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #0f172a; /* dark blue */
+  position: sticky; /* stays on top while scrolling */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Inner container */
+.navdir {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.Logo a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f97316; /* orange */
+  text-decoration: none;
+}
+
+/* Menu */
+.navdir ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* Links */
+.navdir ul li a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.navdir ul li a:hover {
+  color: #f97316;
+}
+
+/* Sign In Button */
+.navdir button {
+  background-color: #f97316;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navdir button:hover {
+  background-color: #ea580c;
+}
+
+/* Button link */
+.navdir button a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navdir ul {
+    gap: 14px;
+  }
+
+  .navdir ul li a {
+    font-size: 14px;
+  }
+}
